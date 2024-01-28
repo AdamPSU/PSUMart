@@ -9,19 +9,32 @@
 </head>
 <body>
     <section id="header">
+        <button class="logo" data-text="Awesome">
+            <span class="actual-text">&nbsp;PSU&nbsp;</span>
+            <span aria-hidden="true" class="hover-text">&nbsp;PSU&nbsp;</span>
+        </button>
+
         <ul id="nav-links">
             <li class="link"><a href="#">About</a></li>
             <li class="link"><a href="#">Contact</a></li>
-            <!-- Add shop icon using Font Awesome -->
             <li class="link"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
         </ul>
+
     </section>    
     <section id="hero">
         <img id="lion" src="./images/lion.png">
-        <div class="shop-button">
-            <h6>Premium Deals</h6>
-            <h1>SHOP <span>NOW</span>!</h1>
-            <p>Save more with coupons — up to 20% off!</p>
+        <div class="shop-prompt">
+            <div class="article">
+                <h6>Premium Deals</h6>
+                <h1>PSU<span>MART</span></h1>
+                <p>Save more with coupons — up to 20% off!</p>
+                <button class="shop-button">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> SHOP NOW!
+                </button>
+            </div>
+            <div class="dotted-line">
+                <img src="./images/dotted-line.png">
+            </div>
         </div>
     </section>
     <section id="shop"></section>
