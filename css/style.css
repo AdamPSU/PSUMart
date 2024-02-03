@@ -5,11 +5,11 @@
    padding: 0; 
    box-sizing: border-box; 
    font-family: 'Poppins', sans-serif;  
-   font-size: 22px; 
+   font-size: 15px; 
 }
 
 i { 
-    color: #ffdd88; 
+    color: #191970; 
     cursor: pointer;
 }
 
@@ -40,15 +40,18 @@ body {
     width: 100%; 
 }
 
+.first-page {
+    background-color: #eaf4fc;
+}
+
 #header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 40px; 
+    padding: 20px 80px; 
 
-    background-color: #1a1a79;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
-    height: 15vh; 
+    background-color: #eaf4fc;
+    height: 5vh; 
 
     font-weight: 900; 
 }
@@ -73,7 +76,7 @@ body {
 .link a { 
     position: relative; 
     padding-bottom: 2px;
-    color: #ecf3f9;
+    color: #000;
 }
 
 .link a::after { 
@@ -85,7 +88,7 @@ body {
     bottom: 0; 
     left: 0; 
 
-    background-color: #ffdd88;
+    background-color: #191970;
     transition: all 0.2s ease;
 }
 
@@ -104,21 +107,21 @@ body {
   }
   
 .logo {
-    --border-right: 6px;
-    --text-stroke-color: #ecf3f9;
-    --animation-color: #ffdd88;
+    --border-right: 4px;
+    --text-stroke-color: #000;
+    --animation-color: #191970;
     --fs-size: 2em;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-decoration: none;
 
-    font-size: 22px;
-    font-weight: 500; 
+    font-size: 15px;
+    font-weight: 200; 
     font-family: inherit;
 
     position: relative;
     text-transform: uppercase;
     color: transparent;
-    -webkit-text-stroke: 1px var(--text-stroke-color);
+    -webkit-text-stroke: 2px var(--text-stroke-color);
 }
 
 .hover-text {
@@ -142,9 +145,12 @@ body {
 #hero { 
     display: flex; 
     justify-content: center; 
+    margin: auto; 
 
-    height: 85vh; 
+    height: 95vh; 
+    width: 96vw; 
 
+    border-radius: 15px 15px 0 0; 
     background-color: #191970; 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
 }
@@ -164,7 +170,7 @@ body {
 
     width: 50%;  
     height: 100%; 
-    margin-bottom: 100px; 
+    margin: 10px 0px 100px 50px; 
 }
 
 .article {
@@ -228,13 +234,13 @@ body {
     padding: 16px 24px 16px 28px;
     transform: translate(0px, 0px) rotate(0deg);
     transition: 0.2s;
-    box-shadow: -4px -2px 16px 0px #ecf3f9, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+    box-shadow: -4px -2px 16px 0px #ecf3f9, 4px 2px 16px 0px rgb(26 26 121 / 48%);
 }
    
 .shop-button:hover {
     color: #516d91;
     background-color: #E5EDF5;
-    box-shadow: -2px -1px 8px 0px #ecf3f9, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+    box-shadow: -2px -1px 8px 0px #ecf3f9, 2px 1px 8px 0px rgb(26 26 121 / 48%);
 }
 
 .shop-button:active {
@@ -258,8 +264,96 @@ body {
   
 
 #shop { 
+    padding: 40px; 
     display: flex; 
-    height: 100vh; 
+    justify-content: center; 
+
+    display: flex; 
+    height: 82vh; 
 
     background-color: #eaf4fc;
+}
+
+.card {
+    margin: 20px; 
+
+    width: 190px;
+    height: 254px;
+    border-radius: 10px;
+
+    background: #1a1a79;
+    box-shadow: 1px 5px 60px 0px #100a886b;
+}
+   
+.card .card-border-top {
+    width: 60%;
+    height: 3%;
+
+    background: #eaf4fc;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.card span {
+    font-weight: 600;
+    color: #eaf4fc;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+
+    margin-top: 10px;
+}
+
+.card .product {
+    font-weight: 400;
+    color: #eaf4fc;
+    display: block;
+    text-align: center;
+    font-size: 8px;
+    font-style: italic; 
+}
+
+.card .img {
+    width: 120px;
+    height: 120px;
+    background: #eaf4fc;
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 25px;
+  }
+
+.card .img img {
+    width: 100%; 
+    height: auto; 
+}
+
+.card button {
+    padding: 8px 25px;
+    display: block;
+    margin: auto;
+    margin-top: 10px; 
+    border-radius: 8px;
+    border: none;
+    background: #eaf4fc;
+    color: #1a1a79;
+    font-weight: 600;
+    
+    transform: translate(0px, 0px) rotate(0deg);
+    transition: 0.2s;
+    box-shadow: -4px -2px 16px 0px #ecf3f9, 4px 2px 16px 0px rgb(26 26 121 / 48%);
+}
+
+.card button:hover {
+    cursor: pointer; 
+    background: #eaf4fc;
+    box-shadow: -2px -1px 8px 0px #ecf3f9, 2px 1px 8px 0px rgb(26 26 121 / 48%);
+}
+
+.card button:active {
+    box-shadow: none;
+}
+
+#footer { 
+    height: 10vh; 
+    background-color: #1a1a79;
 }
